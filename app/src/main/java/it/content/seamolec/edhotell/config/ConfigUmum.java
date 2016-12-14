@@ -20,6 +20,7 @@ public class ConfigUmum {
     public static String GAMBAR_HOTEL_URL= ROOT+"images/hotel/";
     public static String LOGIN_URL= IP+"login.php";
     public static String REGISTER_URL= IP+"register.php";
+    public static String RESERVASI_URL= IP+"reservasi.php";
     public static String GET_CITY_URL= IP+"get_city.php";
     public static String GET_ALL_HOTEL_URL= IP+"get_all_hotel.php";
 

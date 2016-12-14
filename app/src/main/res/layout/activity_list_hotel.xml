@@ -10,7 +10,71 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context="it.content.seamolec.edhotell.ListHotelActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round2"
+                android:padding="10dp"
+
+                android:orientation="vertical">
+                <TextView
+                    android:text="Search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="24sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/round"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/pin"/>
+                    <Spinner
+                        android:layout_marginRight="10dp"
+                        android:padding="15dp"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:id="@+id/optCity"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:text="Search"
+                        android:theme="@style/PrimaryButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnSearch"
+                        android:layout_weight="3" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </ScrollView>
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

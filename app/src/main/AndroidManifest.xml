@@ -27,10 +27,11 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".SearchActivity" />
-        <activity android:name=".ListHotelActivity"></activity>
+        <activity android:name=".ListHotelActivity" />
         <activity android:name=".DetailHotelActivity" />
         <activity android:name=".SearchResult" />
-        <activity android:name=".Reservation"></activity>
+        <activity android:name=".Reservation" />
+        <activity android:name=".InvoiceActivity"></activity>
     </application>
 
 </manifest>

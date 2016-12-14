@@ -78,7 +78,7 @@ public class LoginActivity extends AppCompatActivity {
         loggedIn = sharedPreferences.getBoolean(ConfigUmum.LOGGEDIN_SHARED_PREF, false);
 
         if (loggedIn) {
-            Intent intent = new Intent(LoginActivity.this, SearchActivity.class);
+            Intent intent = new Intent(LoginActivity.this, ListHotelActivity.class);
             startActivity(intent);
             finish();
         }

@@ -12,93 +12,94 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context="it.content.seamolec.edhotell.LoginActivity">
-
-    <ImageView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo_edotel"
-        android:id="@+id/imageView2" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="150dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
+        android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@drawable/round"
-            android:layout_alignParentBottom="true">
-
-            <ImageView
-                android:layout_width="15dp"
-                android:layout_height="15dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="15dp"
-                android:src="@drawable/ic_web"/>
-            <EditText
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="email"
-                android:letterSpacing="0.0025"
-                android:inputType="textEmailAddress"
-                android:textColor="#7000"
-                android:textColorHint="#7000"
-                android:background="#00000000"
-                android:textSize="16dp"
-                android:padding="15dp"
-                android:id="@+id/txtEmail" />
-        </LinearLayout>
-
-        <LinearLayout
+            android:orientation="vertical">
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@drawable/round"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp">
+            app:srcCompat="@drawable/logo_edotel"
+            android:id="@+id/imageView2" />
 
-            <ImageView
-                android:layout_width="15dp"
-                android:layout_height="15dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="15dp"
-                android:src="@drawable/ic_lock"/>
-
-            <EditText
-                android:id="@+id/txtPassword"
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:letterSpacing="0.0025"
-                android:textColorHint="#7000"
-                android:textSize="16dp"
-                android:textColor="#7000"
-                android:background="#00000000"
-                android:padding="15dp" />
+                android:orientation="horizontal"
+                android:background="@drawable/round"
+                android:layout_alignParentBottom="true">
 
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_web"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="email"
+                    android:letterSpacing="0.0025"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#7000"
+                    android:textColorHint="#7000"
+                    android:background="#00000000"
+                    android:textSize="16dp"
+                    android:padding="15dp"
+                    android:id="@+id/txtEmail" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/round"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_lock"/>
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:letterSpacing="0.0025"
+                    android:textColorHint="#7000"
+                    android:textSize="16dp"
+                    android:textColor="#7000"
+                    android:background="#00000000"
+                    android:padding="15dp" />
+
+            </LinearLayout>
+
+
+        <Button
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/PrimaryButton"
+            android:id="@+id/btnLogin" />
+
+        <Button
+            android:text="Register"
+            android:theme="@style/PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegister" />
         </LinearLayout>
-    </LinearLayout>
-
-    <Button
-        android:text="Login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/PrimaryButton"
-        android:id="@+id/btnLogin" />
-
-    <Button
-        android:text="Register"
-        android:theme="@style/PrimaryButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnRegister" />
+    </ScrollView>
 </LinearLayout>
